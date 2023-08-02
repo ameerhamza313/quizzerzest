@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import AppNavbar from "./components/Navbar";
+import Home from "./components/Home";
+import CreateQuiz from "./components/CreateQuiz";
+import Leaderboard from "./components/Leaderboard";
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import EditQuiz from './components/EditQuiz';
+import ErrorPage from './components/ErrorPage';
+import EditSpecificQuiz from './components/EditSpecificQuiz';
+import Quiz from './components/Quiz';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <AppNavbar />
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/quiz/:quizTitle" element={<Quiz/>} />
+        <Route path="/create" element={<CreateQuiz/>} />
+        <Route path="/edit" element={<EditQuiz /> } />
+        <Route path="/edit/:quizTitle" element={<EditSpecificQuiz />} />
+        <Route path="/leaderboard" element={<Leaderboard/>} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
