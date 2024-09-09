@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/quizzerzest/static/css/main.da3089f3.css",
+    "main.js": "/quizzerzest/static/js/main.3fb31bcc.js",
+    "index.html": "/quizzerzest/index.html",
+    "main.da3089f3.css.map": "/quizzerzest/static/css/main.da3089f3.css.map",
+    "main.3fb31bcc.js.map": "/quizzerzest/static/js/main.3fb31bcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da3089f3.css",
+    "static/js/main.3fb31bcc.js"
+  ]
+}
