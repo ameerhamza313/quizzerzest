@@ -2,7 +2,7 @@
   "name": "quizzerzest",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ameerhamza313.github.io/quizzerzest",
+  "homepage": "https://ameerhamza313.github.io/quizzerzest/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
